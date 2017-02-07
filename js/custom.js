@@ -89,7 +89,7 @@ $(document).ready(function () {
     function initialize() {
         var mapCanvas = document.getElementById('map');
         var mapOptions = {
-            center: new google.maps.LatLng(39.92757, -83.160207),
+            center: new google.maps.LatLng(40.736851, 22.920227),
             zoom: 8,
             mapTypeId: google.maps.MapTypeId.ROADMAP
         }
@@ -99,11 +99,11 @@ $(document).ready(function () {
     google.maps.event.addDomListener(window, 'load', initialize);
 
     /***************** Wow.js ******************/
-    
+
     new WOW().init();
-    
+
     /***************** Preloader ******************/
-    
+
     var preloader = $('.preloader');
     $(window).load(function () {
         preloader.remove();
